@@ -1,0 +1,78 @@
+name: Setup problem
+description: Report a documentation or setup problem without exposing credentials
+title: "[Setup problem] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post SSH keys, cloud credentials, MFA codes, account IDs, public IPs tied to you, UUIDs, REALITY values, import links, QR codes, or unredacted screenshots/logs. Rotate any credential already exposed.
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      options:
+        - setup-vless-reality-computer
+        - setup-vless-reality-phone
+        - setup-vmess-computer
+        - setup-vmess-phone
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options:
+        - AWS EC2
+        - Azure
+        - Other Ubuntu VPS
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Redacted versions
+      description: Ubuntu, Xray and client versions only; no identifiers or paths.
+      placeholder: Ubuntu 24.04; Xray version; v2rayN/Shadowrocket version
+    validations:
+      required: true
+  - type: dropdown
+    id: checkpoint
+    attributes:
+      label: First failing checkpoint
+      options:
+        - Skill installation/invocation
+        - Cloud account or VM creation
+        - SSH
+        - Xray configuration test
+        - Xray service or listener
+        - Cloud or Ubuntu firewall
+        - Client profile activation
+        - Real HTTPS traffic
+        - Exit-IP verification
+        - Disconnect or clear-proxy recovery
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result, fully redacted
+      description: Include only the smallest error text needed. Replace identifiers with placeholders.
+    validations:
+      required: true
+  - type: checkboxes
+    id: redaction
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed keys, UUIDs, IPs tied to me, links, QR codes, account identifiers, usernames and local paths.
+          required: true
+        - label: I changed only one variable at a time and identified the first failing checkpoint.
+          required: true

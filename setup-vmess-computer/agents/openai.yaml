@@ -1,0 +1,4 @@
+interface:
+  display_name: "VMess on Computer"
+  short_description: "Beginner-safe VMess setup for Windows or Mac"
+  default_prompt: "Use $setup-vmess-computer to guide me checkpoint by checkpoint through a beginner VMess setup, validation, recovery, and cost cleanup on my computer."

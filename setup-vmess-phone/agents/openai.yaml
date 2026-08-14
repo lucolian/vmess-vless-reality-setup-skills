@@ -1,0 +1,4 @@
+interface:
+  display_name: "VMess on Phone"
+  short_description: "Beginner-safe VMess setup for iPhone or Android"
+  default_prompt: "Use $setup-vmess-phone to guide me checkpoint by checkpoint through VMess setup and validation on my phone, using iPhone and Shadowrocket first."

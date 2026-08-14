@@ -1,0 +1,4 @@
+interface:
+  display_name: "VLESS + REALITY on Phone"
+  short_description: "Beginner VLESS + REALITY for mobile phones"
+  default_prompt: "Use $setup-vless-reality-phone to guide me checkpoint by checkpoint through VLESS + REALITY setup and validation on my phone, using iPhone and Shadowrocket first."
