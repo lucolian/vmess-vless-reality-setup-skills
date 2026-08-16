@@ -4,6 +4,10 @@ This repository contains four portable Agent Skills that guide beginners through
 
 The portable core of each Skill is its `SKILL.md` and `references/` directory. A compatible agent must be able to load those files and follow their instructions. Installation and invocation differ between agent products, so this repository does not claim automatic compatibility with every agent or interface.
 
+## Educational Wiki (sections 00–07)
+
+The companion [VMess and VLESS + REALITY educational Wiki](https://my.feishu.cn/wiki/DcNow897Eiv5ZakQ8oOcGfrSnNg?from=from_copylink) provides the public learning material for sections 00–07. Private personal systems material is intentionally excluded from this repository and public documentation.
+
 ## Start here: beginner journey
 
 1. Choose one Skill from the table below. Do not load all four for a single setup.
